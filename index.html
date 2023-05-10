@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QUIZOPHILE</title>
+    <style>
+        .qui {
+            content: none;
+            background-image: url('QUIZ logo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            top: 50px;
+            left: 437px;
+            opacity: 0.3;
+        }
+        
+        h1 {
+            color: slateblue;
+            font-weight: 600;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+        }
+        
+        pre {
+            color: crimson;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: relative;
+        }
+        
+        fieldset {
+            background-color: steelblue;
+            border: solid;
+            padding: 10px;
+            margin: top;
+            width: 10cm;
+            height: 4cm;
+            position: relative;
+        }
+    </style>
+    <script type=text/javascript src="validation1.js"></script>
+</head>
+
+<body onload="alert('WELCOME TO QUIZOPHILE..!')">
+    <div class="qui"></div>
+    <center>
+        <h1>QUIZOPHILE</h1>
+        <pre>
+        <p>"The beautiful thing about learning is that nobody can take it away from you."
+            This page gives you the right platform to test your Mental ability
+            in cracking any kinds of aptitute test.</p>
+            </pre>
+        <h2 style="color:blue;"><b><i>LogIn to get start</i></b></h2>
+        <form action="QUIZ_WEBSITE.html">
+            <fieldset>
+                <label style="font-family: Arial, Helvetica, sans-serif;">Name :
+                <input type="textbox" name="Name"  id="myname"
+                onchange="validationform();"></label><br><br>
+                <label style="font-family: Arial, Helvetica, sans-serif;">e-mail :
+                <input type="textbox" name="e-mail" size="15"> </label><br><br>
+                <label style="font-family: Arial, Helvetica, sans-serif;">phone_number :
+                <input type="textbox" name="countrycode" size="2" value="+91">
+                <input type="textbox" name="phone_number" id="myphone" size="10"
+                onchange="phonevalidation();" ></label><br><br>
+                <input type="reset" id="reset"><br>
+                <input type="submit" onclick="alert('Lets..!Start')" value="Login">
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>
